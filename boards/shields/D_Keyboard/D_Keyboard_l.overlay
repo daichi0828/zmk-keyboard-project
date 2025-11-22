@@ -20,7 +20,7 @@
                 , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
                 , <&xiao_d 10 GPIO_ACTIVE_HIGH> 
                 ; 
-   }
+   };
 
 &pinctrl {
     spi0_default: spi0_default {
