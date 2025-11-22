@@ -15,9 +15,6 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: daichi0828
-      remote: zmk-keyboard-project
-      revision: main
     - name: zmk-pmw3610-driver
       remote: badjeff
       revision: main
