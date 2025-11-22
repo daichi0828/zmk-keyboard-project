@@ -1,0 +1,8 @@
+file_format: "1"
+id: D-Keyboard
+name: D-Keyboard
+type: shield
+url: https://github.com/daichi0828/zmk-keyboard-project
+requires: [seeeduino_xiao_ble]
+features:
+  - keys

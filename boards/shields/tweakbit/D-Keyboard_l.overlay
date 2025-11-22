@@ -1,4 +1,4 @@
-#include "tweakbit.dtsi"
+#include "D-Keyboard.dtsi"
 
 //追加文
 &pinctrl {

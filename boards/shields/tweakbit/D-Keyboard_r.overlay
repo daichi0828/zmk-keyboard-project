@@ -1,4 +1,4 @@
-#include "tweakbit.dtsi"
+#include "D-Keyboard.dtsi"
 #include <input/processors.dtsi>
 
 &default_transform {
