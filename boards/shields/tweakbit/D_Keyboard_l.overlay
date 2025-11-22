@@ -1,6 +1,27 @@
 #include "D_Keyboard.dtsi"
 
 //追加文
+
+   kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
+            row-gpios
+                = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+                , <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
+                ;
+            col-gpios
+                = <&xiao_d 5 GPIO_ACTIVE_HIGH>
+                , <&xiao_d 6 GPIO_ACTIVE_HIGH> 
+                , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
+                , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
+                , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
+                , <&xiao_d 10 GPIO_ACTIVE_HIGH> 
+                ; 
+   }
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -19,6 +40,8 @@
         };
     };
 };
+
+
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 &spi0 {
