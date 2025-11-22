@@ -20,10 +20,10 @@
         >;
     };
     
- //   kscan0: kscan {
- //       compatible = "zmk,kscan-gpio-matrix";
- //       label = "KSCAN";
- //       diode-direction = "col2row";
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
  //           row-gpios
  //               = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
  //               , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
@@ -38,7 +38,7 @@
  //               , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
  //               , <&xiao_d 10 GPIO_ACTIVE_HIGH> 
  //               ; 
- //   };
+    };
 
     //left hand trackball
     split_inputs {
