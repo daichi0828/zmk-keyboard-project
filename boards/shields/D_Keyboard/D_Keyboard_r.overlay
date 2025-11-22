@@ -7,7 +7,7 @@
 
 //追加文
 
-&kscan0: kscan {
+kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
