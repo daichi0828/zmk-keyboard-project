@@ -1,4 +1,4 @@
-#include "D-Keyboard.dtsi"
+#include "D_Keyboard.dtsi"
 
 //追加文
 &pinctrl {

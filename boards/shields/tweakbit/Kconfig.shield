@@ -1,5 +1,5 @@
-config SHIELD_D-KEYBOARD_R
-    def_bool $(shields_list_contains,D-Keyboard_r)
+config SHIELD_D_KEYBOARD_R
+    def_bool $(shields_list_contains,D_Keyboard_r)
 
-config SHIELD_D-KEYBOARD_L
-    def_bool $(shields_list_contains,D-Keyboard_l)
+config SHIELD_D_KEYBOARD_L
+    def_bool $(shields_list_contains,D_Keyboard_l)

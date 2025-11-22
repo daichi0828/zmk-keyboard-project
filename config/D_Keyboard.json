@@ -1,6 +1,6 @@
 {
-  "id": "D-Keyboard",
-  "name": "D-Keyboard",
+  "id": "D_Keyboard",
+  "name": "D_Keyboard",
   "layouts": {
     "default_layout": {
       "name": "default_layout",

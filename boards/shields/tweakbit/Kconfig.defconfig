@@ -1,7 +1,7 @@
-if SHIELD_D-KEYBOARD_R
+if SHIELD_D_KEYBOARD_R
 
 config ZMK_KEYBOARD_NAME
-    default "D-Keyboard"
+    default "D_Keyboard"
 
 config ZMK_BLE
     default y
@@ -11,7 +11,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_D-KEYBOARD_R || SHIELD_D-KEYBOARD_L
+if SHIELD_D_KEYBOARD_R || SHIELD_D_KEYBOARD_L
 
 config NFCT_PINS_AS_GPIOS
     default y
