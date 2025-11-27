@@ -52,10 +52,10 @@
 
         default_layer {
             bindings = <
-&mt TAB Q         &kp W           &kp E         &kp R         &kp T                        &kp Y           &kp U  &kp I      &kp O                    &kp P
-&mt LCTRL A       &kp S           &kp D         &kp F         &kp G                        &kp H           &kp J  &kp K      &kp L                    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V         &kp B                        &kp N           &kp M  &kp COMMA  &kp DOT                  &kp SLASH
-&kp LCTRL         &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp TAB  &kp SPACE    &mo 1  &kp LANGUAGE_1                    &mt LEFT_WIN LANGUAGE_2  &mo 2
+&kp Q             &kp W           &kp E         &kp R         &kp T                        &kp Y             &kp U  &kp I      &kp O                    &kp P
+&mt LCTRL A       &kp S           &kp D         &kp F         &kp G                        &kp H             &kp J  &kp K      &kp L                    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V         &kp B                        &kp N             &kp M  &kp COMMA  &kp DOT                  &kp SLASH
+&kp LCTRL         &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp TAB  &kp SPACE    &mo 1  &lt 3 LANGUAGE_1                    &mt LEFT_WIN LANGUAGE_2  &mo 2
             >;
         };
 
@@ -70,10 +70,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans    &trans          &trans     &trans  &kp DELETE
-&trans  &trans  &trans  &trans  &trans                    &trans    &kp UP_ARROW    &trans     &trans  &kp BACKSPACE
-&trans  &trans  &trans  &trans  &trans                    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp ENTER
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                               &trans  &trans
+&kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &trans                                                 &trans    &trans          &trans     &trans  &kp DELETE
+&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &trans                                                 &trans    &kp UP_ARROW    &trans     &trans  &kp BACKSPACE
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS     &trans                                                 &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp ENTER
+&kp KP_NUMBER_0  &kp PERIOD       &kp KP_EQUAL     &kp KP_PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans                               &trans  &trans
             >;
         };
 
