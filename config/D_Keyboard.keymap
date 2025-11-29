@@ -13,7 +13,7 @@
     quick-tap-ms = <0>;
 };
 
-/  {
+/ {
     combos {
         compatible = "zmk,combos";
 
@@ -65,7 +65,7 @@
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp ESCAPE       &trans       &trans    &trans      &trans                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL             &kp BACKSLASH
 &trans           &trans       &trans    &trans      &trans                         &kp GRAVE         &kp SQT            &kp COMMA     &kp DOT               &kp SLASH
-&trans           &trans       &trans    &trans      &trans       &trans    &trans  &trans                                             &trans                &trans
+&kp ESCAPE       &trans       &trans    &trans      &trans       &trans    &trans  &trans                                             &trans                &trans
             >;
         };
 
