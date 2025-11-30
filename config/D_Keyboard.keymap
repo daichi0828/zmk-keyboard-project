@@ -71,10 +71,10 @@
 
         layer_2 {
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &trans                                                 &trans    &trans          &trans     &trans  &kp DELETE
-&kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &trans                                                 &trans    &kp UP_ARROW    &trans     &trans  &kp BACKSPACE
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS     &trans                                                 &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp ENTER
-&kp N0        &kp PERIOD    &kp ENTER     &kp KP_PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans                               &trans  &trans
+&kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &trans                                                 &trans  &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp DELETE
+&kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &trans                                                 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS     &trans                                                 &trans  &trans          &trans          &trans           &kp ENTER
+&kp N0        &kp PERIOD    &kp ENTER     &kp KP_PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans                                  &trans           &trans
             >;
         };
 
