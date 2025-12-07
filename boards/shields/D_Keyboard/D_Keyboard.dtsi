@@ -66,6 +66,5 @@
         status = "disabled";
         input-processors =
               <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;        //this gets it to the default installation orientation
-        invert-x;
     };
 };
