@@ -57,7 +57,7 @@
         device = <&trackball_peripheral_split>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;       //this gets it to the default installation orientation
-            //<&zip_temp_layer 5 500>,                         //オートマウスレイヤーの選択
+            <&zip_temp_layer 4 500>,                         //オートマウスレイヤーの選択
     };
     
     //right hand trackball
