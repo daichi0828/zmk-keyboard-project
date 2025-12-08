@@ -100,11 +100,11 @@
 
     // //right hand trackball overrides
 
-    &trackball_peripheral_listener {
-        input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,    //this gets it to the default installation orientation,
-            <&zip_temp_layer 4 500>;    //activate layer 4 within 500ms of the trackball moving
-    };
+     &trackball_peripheral_listener {
+         input-processors =
+             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,//this gets it to the default installation orientation
+             <&zip_temp_layer 4 500>;//activate layer 4 within 500ms of the trackball moving
+     };
 
     // //left hand trackball overrides
     // &trackball_central_listener {
