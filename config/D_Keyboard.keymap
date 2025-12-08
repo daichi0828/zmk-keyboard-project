@@ -72,9 +72,9 @@
 
         layer_2 {
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &trans                                                 &trans  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp DELETE
+&kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &trans                                                 &trans  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &kp DELETE
 &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &trans                                                 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS     &trans                                                 &trans  &trans          &trans          &trans           &kp ENTER
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS     &trans                                                 &trans  &mkp MB4        &mkp MCLK       &mkp MB5         &kp ENTER
 &kp N0        &kp PERIOD    &kp ENTER     &kp KP_PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans                                  &trans           &trans
             >;
         };
@@ -90,20 +90,24 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &trans
-&trans  &trans  &trans  &trans  &trans                    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &trans
-&trans  &trans  &trans  &trans  &trans                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N0                                    &kp KP_PLUS      &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                     &trans     &trans
             >;
         };
     };
 
     // //right hand trackball overrides
-     &trackball_peripheral_listener {
-         input-processors =
-             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,//this gets it to the default installation orientation
-             <&zip_temp_layer 4 500>;//activate layer 3 within 500ms of the trackball moving
-     };
+
+    &trackball_peripheral_listener {
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+            //this gets it to the default installation orientation,
+            <&zip_temp_layer 4 500>;
+//activate layer 3 within 500ms of the trackball moving
+    };
+
     // //left hand trackball overrides
     // &trackball_central_listener {
     //     input-processors = 
