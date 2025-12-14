@@ -26,9 +26,11 @@ config SPI
     default y
 
 config PMW3610
+    bool "Enable PMW3610 support"
     default y
 
 config PMW3610_SWAP_XY
+    bool "Swap X and Y axes for PMW3610"
     default y
 
 config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
