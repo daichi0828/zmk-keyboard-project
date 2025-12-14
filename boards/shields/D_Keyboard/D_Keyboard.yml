@@ -3,6 +3,6 @@ id: D_Keyboard
 name: D_Keyboard
 type: shield
 url: https://github.com/daichi0828/zmk-keyboard-project
-requires: [seeeduino_xiao_ble]
+requires: [xiao_ble]
 features:
   - keys
