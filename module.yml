@@ -1,0 +1,3 @@
+name: zmk-keyboard-project
+build:
+  cmake: .
