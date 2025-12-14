@@ -74,7 +74,7 @@
 //        y-input-code = <INPUT_REL_Y>;
         zephyr,axis-x = <0>;  // 0 = X軸
         zephyr,axis-y = <1>;  // 1 = Y軸
-//        invert-y;
+        invert-y;
     };
 };
 
