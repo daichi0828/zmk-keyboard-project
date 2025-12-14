@@ -89,10 +89,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &mkp MB4   &trans     &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                     &trans     &trans
+&trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans                    &trans  &trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK
+&trans  &mkp MB4        &mkp MB3        &mkp MB5         &trans                    &trans  &trans  &mkp MB4        &msc SCRL_DOWN  &mkp MB5
+&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans                          &trans          &trans
             >;
         };
     };
