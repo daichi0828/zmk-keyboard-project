@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: caksoylar  # <-- RGB LED
       url-base: https://github.com/caksoylar  
+    - name: daichi0828
+      url-base: https://github.com/daichi0828   
   projects:
     - name: zmk
       remote: zmkfirmware
