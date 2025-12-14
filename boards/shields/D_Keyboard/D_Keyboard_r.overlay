@@ -70,8 +70,8 @@
         motion-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
 //      cpi = <600>;
 //      evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
+//        x-input-code = <INPUT_REL_X>;
+//        y-input-code = <INPUT_REL_Y>;
         zephyr,axis-x = <0>;  // 0 = X軸
         zephyr,axis-y = <1>;  // 1 = Y軸
 //        invert-y;
