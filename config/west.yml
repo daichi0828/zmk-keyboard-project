@@ -19,5 +19,9 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+    - name: zmk-keyboard-project
+      remote: daichi0828  # または自分のGitHubユーザー名に合わせて
+      revision: main
+      path: zmk-keyboard-project
   self:
     path: config
