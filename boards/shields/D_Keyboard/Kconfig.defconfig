@@ -39,4 +39,7 @@ config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
 config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
     default 10
 
+config SHIELD_D_KEYBOARD_R
+    def_bool y
+
 endif
