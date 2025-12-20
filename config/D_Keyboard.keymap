@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E         &kp R             &kp T                                         &kp Y             &kp U  &kp I      &kp O                     &lt 4 P
+&kp Q               &kp W           &kp E         &kp R             &kp T                                         &kp Y             &kp U  &kp I      &kp O                     &lt 5 P
 &mt LEFT_CONTROL A  &kp S           &kp D         &kp F             &kp G                                         &kp H             &kp J  &kp K      &kp L                     &mt RIGHT_CONTROL SEMICOLON
 &mt LEFT_SHIFT Z    &kp X           &kp C         &kp V             &kp B                                         &kp N             &kp M  &kp COMMA  &kp PERIOD                &mt RIGHT_SHIFT SLASH
-&kp LCTRL           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_WIN TAB  &lt 1 LANGUAGE_1  &lt 4 SPACE    &lt 2 SPACE  &lt 5 LANGUAGE_2                    &mt LEFT_WIN PRINTSCREEN  &lt 3 ENTER
+&kp LCTRL           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_WIN TAB  &lt 1 LANGUAGE_1  &lt 4 SPACE    &lt 2 SPACE  &lt 1 LANGUAGE_2                    &mt LEFT_WIN PRINTSCREEN  &lt 3 ENTER
             >;
         };
 
@@ -94,8 +94,8 @@
 
         mouse_layer {
             bindings = <
-&none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none                  &none  &none  &mkp LCLK  &mkp RCLK  &none
-&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                  &none  &none  &none      &mkp MCLK  &none
+&none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none                  &none  &none  &mkp LCLK  &mkp MCLK  &mkp RCLK
+&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                  &none  &none  &none      &none      &none
 &none  &mkp MB4        &mkp MB3        &mkp MB5         &none                  &none  &none  &none      &none      &none
 &none  &none           &none           &none            &none  &none    &none  &none                    &none      &none
             >;
