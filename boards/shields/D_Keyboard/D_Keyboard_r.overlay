@@ -5,8 +5,6 @@
     col-offset = <6>;
 };
 
-//追加文
-
 &kscan0 {
             row-gpios
                 = <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
@@ -23,11 +21,9 @@
                 ; 
    };
 
-//追加
 &uicr {
         nfct-pins-as-gpios;
 };
-//ここまで
 
 &pinctrl {
     spi0_default: spi0_default {    //通常時(SPI通信中)のピン構成
@@ -47,10 +43,6 @@
         };
     };
 };
-
-//&trackball_peripheral_listener {
-//    status = "okay";
-//};
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 &spi0 {
@@ -79,18 +71,14 @@
     };
 };
 
-// Overrides for the input listener node
-&trackball_central_listener {
-    status = "okay";
-    device = <&trackball_central>;
-};
-
-    trackball_central_listener: trackball_central_listener {
+trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
-//        status = "disabled";
+        status = "okay";
+        device = <&trackball_central>;
         input-processors =
             <&zip_temp_layer 4 500>,                         //オートマウスレイヤーの選択
             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;        //this gets it to the default installation orientation
     };
 
+};
 
