@@ -3,3 +3,6 @@ config SHIELD_D_KEYBOARD_R
 
 config SHIELD_D_KEYBOARD_L
     def_bool $(shields_list_contains,D_Keyboard_l)
+
+config ZMK_SPLIT_BLE_CENTRAL
+    bool "Enable BLE central role for split keyboards"
