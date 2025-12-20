@@ -62,37 +62,37 @@
 
         layer_1 {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp ESCAPE       &trans       &trans    &trans      &trans                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL             &kp BACKSLASH
-&trans           &trans       &trans    &trans      &trans                         &kp GRAVE         &kp SQT            &kp COMMA     &kp DOT               &kp SLASH
-&trans           &trans       &trans    &trans      &trans       &trans    &trans  &trans                                             &trans                &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                  &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp ESCAPE       &none        &none     &none       &none                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL             &kp BACKSLASH
+&none            &none        &none     &none       &none                        &kp GRAVE         &kp SQT            &kp COMMA     &kp DOT               &kp SLASH
+&none            &none        &none     &none       &none        &none    &none  &none                                              &none                 &none
             >;
         };
 
         layer_2 {
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &trans                                                 &trans  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &kp DELETE
-&kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &trans                                                 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS     &trans                                                 &trans  &mkp MB4        &mkp MCLK       &mkp MB5         &kp ENTER
-&kp N0        &kp PERIOD    &kp ENTER     &kp KP_PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans                                  &trans           &trans
+&kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &none                                                 &none  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &kp DELETE
+&kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &none                                                 &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS     &none                                                 &none  &mkp MB4        &mkp MCLK       &mkp MB5         &kp ENTER
+&kp N0        &kp PERIOD    &kp ENTER     &kp KP_PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &none                                  &none            &none
             >;
         };
 
         layer_3 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
-&trans        &trans        &trans        &trans        &trans                              &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-&trans        &trans        &trans        &trans        &trans                              &kp F11  &kp F12  &kp F13  &kp F14  &kp F15
-&bt BT_CLR    &trans        &trans        &trans        &trans        &sys_reset    &trans  &trans                     &trans   &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
+&none         &none         &none         &none         &none                              &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
+&none         &none         &none         &none         &none                              &kp F11  &kp F12  &kp F13  &kp F14  &kp F15
+&bt BT_CLR    &none         &none         &none         &none         &sys_reset    &none  &none                      &none    &none
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans                    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &trans  &mkp MB4        &msc SCRL_UP    &mkp MB5
-&trans  &mkp MB4        &mkp MB3        &mkp MB5         &trans                    &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT
-&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans                          &trans          &trans
+&none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none                  &none  &none  &mkp LCLK       &mkp MCLK       &mkp RCLK
+&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                  &none  &none  &mkp MB4        &msc SCRL_UP    &mkp MB5
+&none  &mkp MB4        &mkp MB3        &mkp MB5         &none                  &none  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT
+&none  &none           &none           &none            &none  &none    &none  &none                         &none           &none
             >;
         };
 
