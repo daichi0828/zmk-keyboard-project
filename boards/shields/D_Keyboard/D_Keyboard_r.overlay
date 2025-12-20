@@ -84,17 +84,14 @@ trackball_central_listener: trackball_central_listener {
         status = "okay";
         device = <&trackball_central>;
         input-processors =
-            <&zip_temp_layer 4 500>,                         //オートマウスレイヤーの選択
-            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP;       //this gets it to the default installation orientation
+            <&zip_temp_layer 4 500>,                       //オートマウスレイヤーの選択
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;       //this gets it to the default installation orientation
  
         scroll_mode {
             layers = <5>;
             input-processors =
-                /* スクロールモード時も軸の入れ替えを維持 */
                 <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
-                /* 移動をスクロールに変換（引数は不要） */
                 <&zip_xy_to_scroll_mapper>,
-                /* スクロール速度の調整 */
                 <&zip_scroll_scaler 2 1>;
         };
     };
