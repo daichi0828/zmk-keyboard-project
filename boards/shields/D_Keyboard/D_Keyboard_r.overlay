@@ -87,13 +87,13 @@ trackball_central_listener: trackball_central_listener {
 //            <&zip_temp_layer 4 500>,                       //オートマウスレイヤーの選択
             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;       //this gets it to the default installation orientation
  
-        scroll_mode {
-            compatible = "zmk,input-listener-entry";
-            layers = <5>;
-            input-processors =
-                <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
-                <&zip_xy_to_scroll_mapper>,
+//        scroll_mode {
+//            compatible = "zmk,input-listener-entry";
+//            layers = <5>;
+//            input-processors =
+//                <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+                <&zip_xy_to_scroll_mapper 5>,
                 <&zip_scroll_scaler (-1) 4>;
-        };
+//        };
     };
 };
