@@ -79,7 +79,4 @@ trackball_central_listener: trackball_central_listener {
         input-processors =
             <&zip_temp_layer 4 500>,                         //オートマウスレイヤーの選択
             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;        //this gets it to the default installation orientation
-    };
-
 };
-
