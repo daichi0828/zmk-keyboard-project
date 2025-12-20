@@ -9,6 +9,9 @@ config ZMK_BLE
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_SPLIT_BLE_CENTRAL
+    default y
+
 endif
 
 if SHIELD_D_KEYBOARD_R || SHIELD_D_KEYBOARD_L
