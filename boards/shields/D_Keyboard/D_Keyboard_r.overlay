@@ -84,7 +84,7 @@ trackball_central_listener: trackball_central_listener {
         status = "okay";
         device = <&trackball_central>;
         input-processors =
-            <&zip_temp_layer 4 500>,                       //オートマウスレイヤーの選択
+//i            <&zip_temp_layer 4 500>,                       //オートマウスレイヤーの選択
             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;       //this gets it to the default installation orientation
  
         scroll_mode {
@@ -92,7 +92,7 @@ trackball_central_listener: trackball_central_listener {
             input-processors =
                 <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
                 <&zip_xy_to_scroll_mapper>,
-                <&zip_scroll_transform (SCROLL_INVERT_Y)>,
+                <&zip_scroll_transform 1 0>,
                 <&zip_scroll_scaler 1 4>;
         };
     };
