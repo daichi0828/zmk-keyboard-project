@@ -85,6 +85,8 @@ trackball_central_listener: trackball_central_listener {
         device = <&trackball_central>;
         input-processors =
             <&zip_temp_layer 4 500>,                         //オートマウスレイヤーの選択
-            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;        //this gets it to the default installation orientation
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //this gets it to the default installation orientation
+            <&zip_scroll_scaler 2 1>, // スクロール速度の調整（必要に応じて数値を変更）
+            <&zip_xy_to_scroll_mapper 5>; 
     };
 };
