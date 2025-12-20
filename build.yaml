@@ -19,7 +19,7 @@
 ---
 include:
   - board: xiao_ble
-    shield: D_Keyboard_r rgbled_adapter
+    shield: D_Keyboard_r rgbled_adapter zmk-ble
   - board: xiao_ble
     shield: D_Keyboard_l rgbled_adapter
   - board: xiao_ble
