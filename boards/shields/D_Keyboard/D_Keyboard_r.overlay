@@ -68,7 +68,7 @@
 //        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
         motion-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
 //      cpi = <600>;
-        res-cpi = <1000>;
+        res-cpi = <800>;
 //      evt-type = <INPUT_EV_REL>;
 //        x-input-code = <INPUT_REL_X>;
 //        y-input-code = <INPUT_REL_Y>;
@@ -84,7 +84,7 @@ trackball_central_listener: trackball_central_listener {
         status = "okay";
         device = <&trackball_central>;
         input-processors =
-//            <&zip_temp_layer 4 500>,                       //オートマウスレイヤーの選択
+            <&zip_temp_layer 4 500>,                       //オートマウスレイヤーの選択
             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;       //this gets it to the default installation orientation
  
         scroll_mode {
@@ -92,7 +92,7 @@ trackball_central_listener: trackball_central_listener {
             input-processors =
                 <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
                 <&zip_xy_to_scroll_mapper>,
-                <&zip_scroll_scaler 2 1>;
+                <&zip_scroll_scaler 1 2>;
         };
     };
 };
