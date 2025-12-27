@@ -64,7 +64,7 @@
         smart-mode;
         spi-max-frequency = <1000000>;
 //        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOWi)>;
+        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW)>;
         spi-cpol;
         spi-cpha;
         res-cpi = <600>;
