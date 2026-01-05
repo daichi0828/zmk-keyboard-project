@@ -67,7 +67,7 @@
         motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW)>;
         spi-cpol;
         spi-cpha;
-        res-cpi = <600>;
+        res-cpi = <1200>;
         zephyr,axis-x = <0>;  // 0 = X軸
         zephyr,axis-y = <1>;  // 1 = Y軸
         invert-y;
