@@ -120,7 +120,7 @@
 
         scroll_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &mkp LCLK  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &mkp LCLK  &mkp RCLK  &mo 4
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &mkp MB4   &mkp MB5   &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                     &trans     &trans
