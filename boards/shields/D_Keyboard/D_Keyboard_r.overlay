@@ -78,7 +78,8 @@
     excluded-positions = <
         7 // i
         8 // o
-        9 // p
+        17 // k
+        18 // l
         10 // Ctrl
         30 // Ctrl
         20 // Shift
