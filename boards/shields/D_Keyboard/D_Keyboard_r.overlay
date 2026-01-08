@@ -74,13 +74,23 @@
     };
 };
 
+&zip_temp_layer {
+    excluded-positions = <
+        18 // i
+        19 // o
+        21 // p
+        34 // Ctrl
+    >;
+};
+
+
 / {
 trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball_central>;
         input-processors =
-//            <&zip_temp_layer 4 500>,                       //オートマウスレイヤーの選択
+            <&zip_temp_layer 4 5000>,                       //オートマウスレイヤーの選択
             <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;       //this gets it to the default installation orientation
  
         scroll_mode {
