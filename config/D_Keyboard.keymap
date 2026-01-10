@@ -135,7 +135,7 @@
 
         math_mouse_layer {
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &none                                                 &none  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &kp DELETE
+&kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp EQUAL                                             &none  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &kp DELETE
 &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &none                                                 &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS     &none                                                 &none  &mkp MB4        &mkp MCLK       &mkp MB5         &kp ENTER
 &kp N0        &kp PERIOD    &kp ENTER     &kp KP_PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &none                                  &none            &trans
