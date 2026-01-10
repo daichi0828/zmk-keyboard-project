@@ -3,16 +3,10 @@ if SHIELD_D_KEYBOARD_R
 config ZMK_KEYBOARD_NAME
     default "D-Keyboard_R"
 
-config BT
-    default y
-
-config ZMK_BLE
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 config ZMK_SPLIT_BLE_CENTRAL
-    default y
-
-config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 config ZMK_MOUSE
@@ -54,9 +48,22 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
+
 if SHIELD_D_KEYBOARD_R || SHIELD_D_KEYBOARD_L
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_PERIPHERAL
+    default y
+
+config ZMK_SPLIT_BLE_PERIPHERAL
+    default y
+
+config BT
+    default y
+
+config ZMK_BLE
     default y
 
 config INPUT
