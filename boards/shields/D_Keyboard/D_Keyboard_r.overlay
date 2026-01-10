@@ -74,6 +74,9 @@
     };
 };
 
+&xiao_serial {
+    status = "disabled";
+};
 
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
