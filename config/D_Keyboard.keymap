@@ -15,7 +15,8 @@
 
 &mkp_input_listener {
     input-processors = <
-        &zip_temp_layer 4 250>;
+        &zip_temp_layer 4 25
+    >;
 };
 
 / {
@@ -35,6 +36,11 @@
         scroll {
             bindings = <&mo 5>;
             key-positions = <8 9>;
+        };
+
+        mouseMID {
+            bindings = <&mkp MCLK>;
+            key-positions = <7 8>;
         };
     };
 
