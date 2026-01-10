@@ -46,20 +46,18 @@ if SHIELD_D_KEYBOARD_L
 config ZMK_KEYBOARD_NAME
     default "D-Keyboard_L"
 
+config ZMK_SPLIT_ROLE_PERIPHERAL
+    default y
+
+config ZMK_SPLIT_BLE_PERIPHERAL
+    default y
+
 endif
 
 
 if SHIELD_D_KEYBOARD_R || SHIELD_D_KEYBOARD_L
 
 config ZMK_SPLIT
-    default y
-
-config ZMK_SPLIT_ROLE_PERIPHERAL
-    bool
-    default y
-
-config ZMK_SPLIT_BLE_PERIPHERAL
-    bool
     default y
 
 config BT
