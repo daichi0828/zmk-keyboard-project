@@ -65,7 +65,7 @@
 
         complete;
 
-        default_layout {
+        default_map {
             physical-layout = <&default_layout>;
             positions = <>;
         };
