@@ -60,16 +60,15 @@
             ;
     };
 
-    position_map {
-        compatible = "zmk,physical-layout-position-map";
+//    position_map {
+//        compatible = "zmk,physical-layout-position-map";
+//        complete;
 
-        complete;
-
-        default_map {
-            physical-layout = <&default_layout>;
-            positions = <>;
-        };
-    };
+//        default_map {
+//            physical-layout = <&default_layout>;
+//            positions = <>;
+//        };
+//    };
 };
 
     default_transform: keymap_transform_0 {
