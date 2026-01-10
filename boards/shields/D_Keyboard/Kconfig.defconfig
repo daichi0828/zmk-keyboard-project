@@ -1,15 +1,24 @@
 if SHIELD_D_KEYBOARD_R
 
 config ZMK_KEYBOARD_NAME
-    default "D_Keyboard"
+    default "D-Keyboard"
+
+config BT
+    default y
 
 config ZMK_BLE
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL
     default y
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_SPLIT_BLE_CENTRAL
+config ZMK_MOUSE
+    default y
+
+config INPUT_PMW3610
     default y
 
 endif
