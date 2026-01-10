@@ -77,7 +77,6 @@
 
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
-    timeout-ms = <0>;
     excluded-positions = <
         7 // i
         8 // o
