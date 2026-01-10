@@ -10,7 +10,7 @@
         zmk,physical-layout = &D_Keyboard_physical_layout;
     };
 
-    D_Keyboard_physical_layout: D_Keyboard_physical_layout {
+    default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "default layout";
         transform = <&default_transform>;
