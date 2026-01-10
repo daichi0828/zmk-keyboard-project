@@ -18,7 +18,21 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_MOUSE
     default y
 
+config ZMK_POINTING
+    default y
+
+config SPI
+    default y
+
 config INPUT_PMW3610
+    default y
+
+config PMW3610
+    bool "Enable PMW3610 support"
+    default y
+
+config PMW3610_SWAP_XY
+    bool "Swap X and Y axes for PMW3610"
     default y
 
 config ZMK_USB
@@ -40,27 +54,12 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
-
 if SHIELD_D_KEYBOARD_R || SHIELD_D_KEYBOARD_L
 
 config ZMK_SPLIT
     default y
 
 config INPUT
-    default y
-
-config ZMK_POINTING
-    default y
-
-config SPI
-    default y
-
-config PMW3610
-    bool "Enable PMW3610 support"
-    default y
-
-config PMW3610_SWAP_XY
-    bool "Swap X and Y axes for PMW3610"
     default y
 
 config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
