@@ -47,9 +47,11 @@ config ZMK_KEYBOARD_NAME
     default "D-Keyboard_L"
 
 config ZMK_SPLIT_ROLE_PERIPHERAL
+    bool
     default y
 
 config ZMK_SPLIT_BLE_PERIPHERAL
+    bool
     default y
 
 endif
