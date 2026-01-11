@@ -68,8 +68,8 @@
         spi-cpol;
         spi-cpha;
         res-cpi = <600>;
-        zephyr,axis-x = <0>;  // 0 = X軸
-        zephyr,axis-y = <1>;  // 1 = Y軸
+        zephyr,axis-x = <1>;  // 0 = X軸
+        zephyr,axis-y = <0>;  // 1 = Y軸
         invert-y;
     };
 };
