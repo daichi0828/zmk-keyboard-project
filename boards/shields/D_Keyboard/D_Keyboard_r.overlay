@@ -59,12 +59,11 @@
 
     trackball_central: trackball_central@0 {
         status = "okay";
-        compatible = "pixart,pmw3610-alt";  //トラボセンサ用のドライバとバインド
+        compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
         reg = <0>;
         smart-mode;
         spi-max-frequency = <1000000>;
         motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-//        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW)>;
         spi-cpol;
         spi-cpha;
         res-cpi = <600>;
