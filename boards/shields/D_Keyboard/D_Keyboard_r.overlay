@@ -62,11 +62,11 @@
         compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
         reg = <0>;
         smart-mode;
-        spi-max-frequency = <1000000>;
+        spi-max-frequency = <2000000>;
         motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-cpol;
         spi-cpha;
-        res-cpi = <600>;
+        res-cpi = <1200>;
         zephyr,axis-x = <1>;  // 0 = X軸
         zephyr,axis-y = <0>;  // 1 = Y軸
         invert-y;
@@ -97,13 +97,11 @@ trackball_central_listener: trackball_central_listener {
         device = <&trackball_central>;
         input-processors =
             <&zip_temp_layer 4 2000>;                       //オートマウスレイヤーの選択
-//            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;       //this gets it to the default installation orientation
  
         scroll_mode {
             layers = <5>;
             input-processors =
                 <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-//                <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
                 <&zip_xy_to_scroll_mapper>,
                 <&zip_scroll_scaler 1 8>;
         };
