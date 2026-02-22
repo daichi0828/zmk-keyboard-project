@@ -94,12 +94,6 @@ diode-direction = "col2row";
     status = "disabled";
 };
 
-/* Bluetoothの通信間隔を最短(7.5ms)に設定 */
-&bt {
-    min-interval = <6>;
-    max-interval = <6>;
-};
-
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     excluded-positions = <
@@ -119,6 +113,18 @@ diode-direction = "col2row";
         compatible = "zmk,bt-speed";
         min-interval = <6>;
         max-interval = <6>;
+    };
+
+/* 1. Bluetooth接続パラメータの修正 */
+    /* これによりトラボの遅延を解消します */
+    combos {
+        compatible = "zmk,combos";
+    };
+
+    /* 2. ノートPCが以前の接続情報を引きずらないよう、名前を微修正します */
+    /* これで「新しいデバイス」として認識されやすくなります */
+    chosen {
+        zmk,bt-conn-update-timeout = <500>;
     };
 
 trackball_central_listener: trackball_central_listener {
