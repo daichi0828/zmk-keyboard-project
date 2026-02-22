@@ -1,5 +1,11 @@
 #include "D_Keyboard.dtsi"
 
+/* 重要：pinctrlによるピンの占有を完全に解除する */
+&pinctrl {
+    /delete-node/ spi0_default;
+    /delete-node/ spi0_sleep;
+};
+
 &kscan0 {
     /* w(Col1)を押すとq(Col0), r(Col2)等が混ざるのはスキャン信号の干渉です。
        物理列の順番を回路図 image_1ff057.png に基づき再定義します。
