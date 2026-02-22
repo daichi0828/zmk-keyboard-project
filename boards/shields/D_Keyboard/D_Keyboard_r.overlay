@@ -78,7 +78,7 @@ diode-direction = "col2row";
         status = "okay";
         compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
         reg = <0>;
-        smart-mode;
+//        smart-mode;
         spi-max-frequency = <1000000>;
         motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* MOTION (回路図 0.02) */
         spi-cpol;
@@ -92,6 +92,12 @@ diode-direction = "col2row";
 
 &xiao_serial {
     status = "disabled";
+};
+
+/* Bluetoothの通信間隔を最短(7.5ms)に設定 */
+&bt {
+    min-interval = <6>;
+    max-interval = <6>;
 };
 
 &zip_temp_layer {
@@ -108,6 +114,13 @@ diode-direction = "col2row";
 };
 
 / {
+/* 通信設定をデバイスツリーに明示的に追加 */
+    config_Bluetooth {
+        compatible = "zmk,bt-speed";
+        min-interval = <6>;
+        max-interval = <6>;
+    };
+
 trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
         status = "okay";
