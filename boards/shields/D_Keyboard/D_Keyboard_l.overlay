@@ -3,20 +3,20 @@
 //追加文
 
 &kscan0 {
-            row-gpios
-                = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-                , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-                , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-                , <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
-                ;
-            col-gpios
-                = <&xiao_d 5 GPIO_ACTIVE_HIGH>
-                , <&xiao_d 6 GPIO_ACTIVE_HIGH> 
-                , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
-                , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
-                , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
-                , <&xiao_d 10 GPIO_ACTIVE_HIGH> 
-                ; 
+row-gpios
+        = <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row0 = 0.02 (A2) */
+        , <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row1 = 0.03 (A4) */
+        , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row2 = 0.28 (A10) */
+        , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row3 = 0.29 (A11) */
+        ;
+    col-gpios
+        = <&gpio0 4  GPIO_ACTIVE_HIGH> /* Col0 = 0.04 (A8) */
+        , <&gpio0 5  GPIO_ACTIVE_HIGH> /* Col1 = 0.05 (A9) */
+        , <&gpio1 12 GPIO_ACTIVE_HIGH> /* Col2 = 1.12 (B9) */
+        , <&gpio1 13 GPIO_ACTIVE_HIGH> /* Col3 = 1.13 (A7) */
+        , <&gpio1 14 GPIO_ACTIVE_HIGH> /* Col4 = 1.14 (A5) */
+        , <&gpio1 15 GPIO_ACTIVE_HIGH> /* Col5 = 1.15 (A6) */
+        ;
    };
 
 &spi0 {
