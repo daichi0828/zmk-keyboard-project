@@ -24,6 +24,9 @@
 /* 左手でSPIが0.05や0.04を掴んでいるとマトリックスが壊れます。完全に無効化します */
 &spi0 { status = "disabled"; };
 &spi1 { status = "disabled"; };
+&uart0 { status = "disabled"; };
+&i2c0 { status = "disabled"; };
+&i2c1 { status = "disabled"; };
 
 //&pinctrl {
 //    spi0_default: spi0_default {
