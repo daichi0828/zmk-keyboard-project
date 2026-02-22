@@ -7,13 +7,11 @@
 };
 
 &kscan0 {
-    /* w(Col1)を押すとq(Col0), r(Col2)等が混ざるのはスキャン信号の干渉です。
-       物理列の順番を回路図 image_1ff057.png に基づき再定義します。
-    */
+    /* スキャン干渉（wでqwerが出る）を防ぐため、論理を厳格に固定 */
     col-gpios
-        = <&gpio0 5  GPIO_ACTIVE_HIGH> /* Col0: Q, A, Z, etc. */
-        , <&gpio1 11 GPIO_ACTIVE_HIGH> /* Col1: W, S, X, etc. */
-        , <&gpio1 12 GPIO_ACTIVE_HIGH> /* Col2: E, D, C (反応しない原因) */
+        = <&gpio0 5  GPIO_ACTIVE_HIGH> /* Col0: Q, A, Z */
+        , <&gpio1 11 GPIO_ACTIVE_HIGH> /* Col1: W, S, X */
+        , <&gpio1 12 GPIO_ACTIVE_HIGH> /* Col2: E, D, C (ここが反応しないのはピン競合のせい) */
         , <&gpio1 13 GPIO_ACTIVE_HIGH> /* Col3: R, F, V */
         , <&gpio1 14 GPIO_ACTIVE_HIGH> /* Col4: T, G, B */
         , <&gpio1 15 GPIO_ACTIVE_HIGH> /* Col5: Trackball側追加キー */
@@ -27,7 +25,7 @@
         ;
 };
 
-/* 左手でSPIが0.05や0.04を掴んでいるとマトリックスが壊れます。完全に無効化します */
+/* 左手の不感を直すための徹底的な無効化 */
 &spi0 { status = "disabled"; };
 &spi1 { status = "disabled"; };
 &uart0 { status = "disabled"; };
