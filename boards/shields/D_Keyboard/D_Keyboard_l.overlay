@@ -1,52 +1,30 @@
 #include "D_Keyboard.dtsi"
 
-/* 重要：pinctrlによるピンの占有を完全に解除する */
 &pinctrl {
     /delete-node/ spi0_default;
     /delete-node/ spi0_sleep;
 };
 
 &kscan0 {
-    /* スキャン干渉（wでqwerが出る）を防ぐため、論理を厳格に固定 */
     col-gpios
-        = <&gpio0 5  GPIO_ACTIVE_HIGH> /* Col0: Q, A, Z */
-        , <&gpio1 11 GPIO_ACTIVE_HIGH> /* Col1: W, S, X */
-        , <&gpio1 12 GPIO_ACTIVE_HIGH> /* Col2: E, D, C (ここが反応しないのはピン競合のせい) */
-        , <&gpio1 13 GPIO_ACTIVE_HIGH> /* Col3: R, F, V */
-        , <&gpio1 14 GPIO_ACTIVE_HIGH> /* Col4: T, G, B */
-        , <&gpio1 15 GPIO_ACTIVE_HIGH> /* Col5: Trackball側追加キー */
+        = <&gpio0 5  GPIO_ACTIVE_HIGH>
+        , <&gpio1 11 GPIO_ACTIVE_HIGH>
+        , <&gpio1 12 GPIO_ACTIVE_HIGH>
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>
+        , <&gpio1 14 GPIO_ACTIVE_HIGH>
+        , <&gpio1 15 GPIO_ACTIVE_HIGH>
         ;
 
     row-gpios
-        = <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row0 */
-        , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row1 */
-        , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row2 */
-        , <&gpio0 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row3 */
+        = <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
 
-/* 左手の不感を直すための徹底的な無効化 */
 &spi0 { status = "disabled"; };
 &spi1 { status = "disabled"; };
 &uart0 { status = "disabled"; };
 &i2c0 { status = "disabled"; };
 &i2c1 { status = "disabled"; };
-
-//&pinctrl {
-//    spi0_default: spi0_default {
-//        group1 {
-//            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
-//                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
-//                <NRF_PSEL(SPIM_MISO, 0, 4)>;
-//        };
-//    };
-//
-//    spi0_sleep: spi0_sleep {
-//        group1 {
-//            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
-//                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
-//                <NRF_PSEL(SPIM_MISO, 0, 4)>;
-//            low-power-enable;
-//        };
-//    };
-//};
