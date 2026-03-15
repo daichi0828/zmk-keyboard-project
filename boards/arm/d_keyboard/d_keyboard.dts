@@ -1,1 +1,8 @@
+/dts-v1/;
 
+/ {
+    model = "D Keyboard (ZMK Variant)";
+    compatible = "zmk,keyboard";
+};
+
+#include <seeed_xiao_nrf52840.dts>
