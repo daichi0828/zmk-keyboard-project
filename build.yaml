@@ -18,12 +18,12 @@
 #
 ---
 include:
-  - board: d_keyboard
+  - board: xiao_ble
 #    shield: D_Keyboard_r
     shield: D_Keyboard_r rgbled_adapter
 #    snippet: studio-rpc-usb-uart
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: d_keyboard
+  - board: xiao_ble
 #    shield: D_Keyboard_l
     shield: D_Keyboard_l rgbled_adapter
   - board: d_keyboard
