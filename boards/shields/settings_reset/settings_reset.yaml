@@ -1,5 +1,6 @@
 name: settings_reset
 type: shield
 compatible: "zmk,shield"
+
 requires:
-  - xiao_ble
+  - seeed,xiao-ble
