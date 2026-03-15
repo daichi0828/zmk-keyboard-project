@@ -1,1 +1,10 @@
-zmk,board: true
+identifier: xiao_ble
+name: Seeed XIAO BLE
+type: board
+arch: arm
+toolchain:
+  - zephyr
+supported:
+  - ble
+  - usb
+compatible: "zmk,board"
