@@ -1,1 +1,7 @@
+if BOARD_D_KEYBOARD
 
+config ZMK_BOARD_COMPAT
+    bool
+    default y
+
+endif
