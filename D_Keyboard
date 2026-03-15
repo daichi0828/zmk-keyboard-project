@@ -1,7 +1,0 @@
-boards/
-  arm/
-    d_keyboard/
-      d_keyboard.dts
-      d_keyboard.yaml
-      Kconfig.board
-      Kconfig.defconfig
