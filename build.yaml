@@ -26,5 +26,5 @@ include:
   - board: xiao_ble
 #    shield: D_Keyboard_l
     shield: D_Keyboard_l rgbled_adapter
-  - board: d_keyboard
+  - board: xiao_ble
     shield: settings_reset
