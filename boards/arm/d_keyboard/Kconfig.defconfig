@@ -1,4 +1,4 @@
-if SHIELD_D_KEYBOARD_R
+if SHIELD_D_KEYBOARD
 
 config ZMK_BOARD_COMPAT
     bool
