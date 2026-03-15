@@ -1,3 +1,0 @@
-config BOARD_D_KEYBOARD
-    bool "D Keyboard (ZMK Variant)"
-    select ZMK_BOARD_COMPAT
