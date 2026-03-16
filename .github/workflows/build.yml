@@ -69,7 +69,7 @@ jobs:
         run: |
           if [ "${{ env.base_dir }}" != "${GITHUB_WORKSPACE}" ]; then
             mkdir "${{ env.base_dir }}/config"
-            cp -R config/* "${{ env.base_dir }}/config/"
+            cp -R config "${{ env.base_dir }}/"
           fi
 
       - name: Cache west modules
