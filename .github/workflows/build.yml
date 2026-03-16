@@ -51,7 +51,9 @@ jobs:
           artifact_name: ${{ matrix.artifact-name }}
           snippet: ${{ matrix.snippet }}
         run: |
-          echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
+          new_tmp_dir="${TMPDIR:-/tmp}/zmk-config"
+          mkdir -p "${new_tmp_dir}"
+          echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV
 
           if [ -n "${snippet}" ]; then
             extra_west_args="-S \"${snippet}\""
