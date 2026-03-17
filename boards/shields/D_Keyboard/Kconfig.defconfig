@@ -70,10 +70,10 @@ config ZMK_BLE
 config INPUT
     default y
 
-#config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
-#    default 30
+config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
+    default 30
 
-#config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
-#    default 10
+config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
+    default 10
 
 endif
