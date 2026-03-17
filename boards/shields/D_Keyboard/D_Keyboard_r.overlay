@@ -62,12 +62,13 @@
         compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
         reg = <0>;
         smart-mode;
-        spi-max-frequency = <1000000>;
+        spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 //        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-cpol;
         spi-cpha;
-        res-cpi = <1200>;
+        cpi = <1200>;
+//        res-cpi = <1200>;
         zephyr,axis-x = <1>;  // 0 = X軸
         zephyr,axis-y = <0>;  // 1 = Y軸
         invert-y;
