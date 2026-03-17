@@ -48,6 +48,12 @@
     };
 };
 
+    aliases {
+        led_red = &rgbled;
+        led_green = &rgbled;
+        led_blue = &rgbled;
+    };
+
 
 &spi0 {
     status = "okay";
