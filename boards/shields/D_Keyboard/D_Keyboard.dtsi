@@ -29,12 +29,6 @@
         wakeup-source;
     };
 
-    aliases {
-        led_red = &rgbled;
-        led_green = &rgbled;
-        led_blue = &rgbled;
-    };
-
    default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "default layout";
