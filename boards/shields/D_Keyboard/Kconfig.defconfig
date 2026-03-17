@@ -1,7 +1,7 @@
 if SHIELD_D_KEYBOARD_R
 
 config ZMK_KEYBOARD_NAME
-    default "D-Keyboard_R"
+    default "D-Keyboard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
