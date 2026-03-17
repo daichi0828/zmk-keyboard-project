@@ -48,13 +48,6 @@
     };
 };
 
-    aliases {
-        led_red = &rgbled;
-        led_green = &rgbled;
-        led_blue = &rgbled;
-    };
-
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim"; //マイコンがnRFシリーズ
@@ -102,6 +95,12 @@
 };
 
 / {
+    aliases {
+        led_red = &rgbled;
+        led_green = &rgbled;
+        led_blue = &rgbled;
+    };
+
 trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
         status = "okay";
