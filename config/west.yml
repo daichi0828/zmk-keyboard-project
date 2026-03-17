@@ -17,10 +17,10 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: main
+      revision: zmk-0.3
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: main
+      revision: v0.3
   #  - name: zmk-keyboard-project
   #    remote: daichi0828  # または自分のGitHubユーザー名に合わせて
   #    revision: main
